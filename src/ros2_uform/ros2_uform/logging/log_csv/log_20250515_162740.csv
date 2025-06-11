@@ -1,0 +1,10 @@
+timestamp,duration_s,image_path,anomaly_type
+20250515_162808,0.00,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162808.png,fallen person
+20250515_162816,0.00,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162816.png,fire
+20250515_162816,0.64,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162816.png,fire
+20250515_162817,1.26,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162817.png,fire
+20250515_162818,1.94,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162818.png,fire
+20250515_162818,2.57,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162818.png,fire
+20250515_162819,3.18,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162819.png,fire
+20250515_162819,3.84,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162819.png,fire
+20250515_162820,4.46,/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_image/anomaly_20250515_162820.png,fire

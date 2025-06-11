@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>yolo_vlm_camera</name>
+  <version>0.0.1</version>
+  <description>ROS2 package for YOLO+VLM</description>
+  <maintainer email="sere411@gachon.ac.kr">Dahye Kim</maintainer>
+  <license>Apache-2.0</license>
+  <build_type>ament_python</build_type>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+</package>
