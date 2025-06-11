@@ -9,6 +9,7 @@ from cv_bridge import CvBridge
 from PIL import Image as PILImage
 from nano_llm import NanoLLM, ChatHistory
 import cv2
+import os
 
 class NanoLLMSubscriber(Node):
     def __init__(self):
@@ -22,6 +23,10 @@ class NanoLLMSubscriber(Node):
         now = time.time()
         ts = time.strftime("%Y%m%d_%H%M%S", time.localtime(now))
         self.log_file = f"/ros2_workspace/src/ros2_nanollm/ros2_nanollm/logging/log_csv/log_{ts}.csv"
+
+        log_dir = os.path.dirname(self.log_file)
+        os.makedirs(log_dir, exist_ok=True)
+        
         try:
             with open(self.log_file, 'x') as f:
                 f.write("timestamp,duration_s,image_path,anomaly_type\n")
