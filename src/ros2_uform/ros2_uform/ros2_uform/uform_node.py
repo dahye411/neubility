@@ -10,6 +10,7 @@ from PIL import Image as PILImage
 import torch
 import time
 from transformers import AutoModel, AutoProcessor
+import os
 
 class UformInferenceNode(Node):
     def __init__(self):
@@ -23,6 +24,10 @@ class UformInferenceNode(Node):
         now = time.time()
         ts = time.strftime("%Y%m%d_%H%M%S", time.localtime(now))
         self.log_file = f"/ros2_workspace/src/ros2_uform/ros2_uform/logging/log_csv/log_{ts}.csv"
+
+        log_dir = os.path.dirname(self.log_file)
+        os.makedirs(log_dir, exist_ok=True)
+        
         try:
             with open(self.log_file, 'x') as f:
                 f.write("timestamp,duration_s,image_path,anomaly_type\n")
